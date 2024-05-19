@@ -1,0 +1,710 @@
+body {
+  background-color: #010d23;
+  color: #ffffff;
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+p {
+  text-align: justify;
+}
+
+h1,
+h2 {
+  font-family: "Press Start 2P", sans-serif;
+  font-size: 35px;
+}
+
+header {
+  background-color: #03223f;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  padding: 1rem 2rem;
+  font-size: 20px;
+}
+
+.icono {
+  width: 50px;
+  display: none;
+}
+
+
+
+nav {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  justify-self: end;
+}
+
+nav ul {
+  list-style-type: none;
+  display: grid;
+  /* cambiado a grid */
+  grid-auto-flow: column;
+  /* Coloca los elementos de la lista en una fila */
+  gap: 1rem;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #038bbb;
+}
+
+.destacado .barra-lateral.destacada {
+  background-color: #038bbb;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 25px;
+}
+
+.imagen-grande {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  /* Centrar la imagen */
+}
+
+.imagenes-medias {
+  display: flex;
+  width: 100%;
+  /* Establece un ancho del 100% para el contenedor */
+  overflow: scroll;
+  /* Oculta el desbordamiento horizontal */
+  flex-wrap: nowrap;
+}
+
+.imagen-container {
+  flex: 1 0 auto;
+  margin: 0 50px;
+  background-color: #02699c;
+  width: 300px;
+  height: 300px;
+}
+
+.exposiciones .exposicion img {
+  width: 100%;
+}
+
+.imagenen-pequeña {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+.imagen-grande {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  border: 5px solid;
+  animation: changingBorder 8s linear infinite;
+}
+
+
+.parrafos {
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 19px;
+}
+
+header img {
+  width: 120px;
+  height: auto;
+  margin-left: 30px;
+}
+
+.exposiciones {
+  display: flex;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  /* Crear tantas columnas de 400px como sea posible */
+  gap: 1rem;
+  justify-content: center;
+
+}
+
+.exposiciones .exposicion {
+  width: 400px;
+  /* Tamaño de los divs cuadrados */
+  height: 400px;
+  position: relative;
+  /* Para posicionar el boton en la parte inferior */
+}
+
+.exposiciones .exposicion img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.exposiciones .exposicion button {
+  position: absolute;
+  /* Posiciona el boton */
+  bottom: 0;
+  /* En la parte inferior del div */
+  left: 50%;
+  /* Centrado horizontalmente */
+  transform: translateX(-50%);
+  /* Centrado horizontalmente */
+  background-color: #038bbb;
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.exposiciones .exposicion button:hover {
+  background-color: #02699c;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  /* Evitar el desplazamiento horizontal */
+}
+
+.centrado {
+  text-align: center;
+}
+
+header {
+  flex-wrap: wrap;
+  /* Permitir que los elementos se ajusten si no hay espacio */
+}
+
+nav ul {
+  padding-left: 0;
+  /* Eliminar el padding por defecto de las listas */
+}
+
+.imagenes-medias {
+  justify-content: center;
+  /* Centrar las imagenes medianas */
+}
+
+footer {
+  background-color: #03223f;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+footer .social-icons {
+  display: flex;
+}
+
+footer .social-icons a {
+  margin-right: 10px;
+}
+
+footer a img {
+  height: 50px;
+  width: auto;
+}
+
+footer p {
+  margin: 0;
+  font-size: 20px;
+}
+
+.button {
+  background-color: #038bbb;
+  color: #1a1a2e;
+  border: none;
+  padding: 0.5em 1em;
+  margin-top: 2em;
+  font-size: 2em;
+  border-radius: 4px;
+  color: #ffffff;
+}
+
+.producto {
+  display: flex;
+  align-items: center;
+  /* Alinea verticalmente */
+  justify-content: space-between;
+  /* Separa la imagen y la informacion */
+}
+
+.producto img {
+  margin-left: 20%;
+  width: auto;
+  height: auto;
+  max-width: 30%;
+}
+
+.info {
+  margin-right: 20%;
+  display: flex;
+  flex-direction: column;
+  /* Coloca el precio encima del boton */
+  align-items: flex-start;
+  /* Alinea los elementos a la izquierda */
+}
+
+.precio {
+  margin: 0;
+  margin-bottom: 0.5em;
+  font-size: 1.5em;
+ 
+}
+
+.producto button {
+  margin-top: 0;
+  /* Remueve el margen superior para alinear con el precio */
+}
+
+ul a img {
+  width: 30px;
+
+}
+
+.centrado_elementos {
+  display: block;
+  margin: 0 auto;
+}
+
+/*Tarea 5*/
+
+
+.contenedor-iframe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+/*Imagenes Juegos*/
+
+
+
+:root {
+  --animation-duration: 0.3s;
+  --hover-bg-color: rgba(255, 255, 255, 0.1);
+  --scale-factor: 1.05;
+}
+
+.exposiciones .exposicion {
+  transition: transform var(--animation-duration) ease, background-color var(--animation-duration) ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #02699c;
+}
+
+.exposiciones .exposicion:hover {
+  transform: scale(var(--scale-factor));
+  background-color: var(--hover-bg-color);
+
+}
+
+.exposiciones .exposicion img {
+  transition: transform var(--animation-duration) ease;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+
+/*Barra de Separación Animada*/
+
+@keyframes moveAndChangeColor {
+  0% {
+    transform: translateX(0);
+    background-color: #007bff;
+  }
+
+  25% {
+    background-color: #28a745;
+  }
+
+  50% {
+    transform: translateX(100%);
+    background-color: #dc3545;
+  }
+
+  75% {
+    background-color: #ffc107;
+  }
+
+  100% {
+    transform: translateX(0);
+    background-color: #007bff;
+  }
+}
+
+.barra-separadora {
+  height: 4px;
+  width: 100%;
+  animation: moveAndChangeColor var(--animation-duration) linear infinite;
+  --animation-duration: 5s;
+}
+
+/*Animacion del Borde de la Imagen Principal*/
+
+@keyframes changingBorder {
+  0% {
+    border-color: #ff4500;
+  }
+
+  25% {
+    border-color: #ff8c00;
+  }
+
+  50% {
+    border-color: #ffd700;
+  }
+
+  75% {
+    border-color: #90ee90;
+  }
+
+  100% {
+    border-color: #ff4500;
+  }
+}
+
+.imagen-grande {
+  animation: changingBorder 8s linear infinite;
+  border: 5px solid;
+  --animation-duration: 8s;
+}
+
+/*Boton*/
+@keyframes pulse {
+  0% {
+    transform: translateX(-50%) scale(1);
+  }
+
+  50% {
+    transform: translateX(-50%) scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+  }
+
+  100% {
+    transform: translateX(-50%) scale(1);
+  }
+}
+
+.exposiciones .exposicion button {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.exposiciones .exposicion button:hover {
+  background-color: #02699c;
+  animation: pulse 0.9s infinite alternate;
+}
+
+/*Animaciones de eleccion*/
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+
+h1.centrado {
+  animation: fadeIn 2s ease-out;
+  font-family: "Press Start 2P", sans-serif;
+  font-size: 35px;
+}
+
+footer .social-icons a img:hover {
+  animation: bounce 0.5s ease;
+
+}
+
+
+/* Aplica la animacian al logo */
+
+@keyframes moverLogo {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(5px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes animacionHover {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+
+.logo {
+  animation: moverLogo 3s infinite alternate;
+  /* Animación de movimiento al cargar */
+}
+
+.logo:hover {
+  animation: animacionHover 1s infinite;
+}
+
+/*Canvas*/
+
+#miCanvas {
+  border: 1px solid #000;
+
+}
+
+/* Estilos responsivos */
+@media (max-width: 850px) {
+  .imagen-grande {
+    width: 100%;
+    /* Cambia el ancho a 100% en dispositivos moviles */
+    display: block;
+    margin: 0 auto;
+    /* Centrar la imagen */
+  }
+
+  header {
+    display: flex;
+  
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+  }
+
+  .icono {
+    display: block;
+    margin-left: auto;
+    cursor: pointer;
+  }
+
+  header img {
+    width: 120px;
+    height: auto;
+    margin-right: auto;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  .exposiciones {
+    flex-direction: column;
+    margin-left: 10%;
+  }
+
+  .exposiciones .exposicion {
+    margin-bottom: 2rem;
+  }
+
+  footer a img {
+    height: 30px;
+    width: auto;
+  }
+
+  .producto img {
+    margin-left: 0%;
+    width: auto;
+    height: auto;
+    max-width: 70%;
+    margin-bottom: 1em;
+  }
+
+  .info {
+    margin-left: 20%;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .precio {
+    margin-left: 35%;
+    margin-bottom: 0.5em;
+    font-size: 1.5em;
+
+  }
+
+  .exposiciones {
+    grid-template-columns: 1fr;
+    /* Una columna en dispositivos moviles */
+  }
+
+  header {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+  }
+
+  /*Tarea 6- actividad 3*/
+
+/* Estilo para ocultar el menu en dispositivos moviles */
+nav ul {
+  display: none;
+}
+
+/* Estilo para mostrar el menu cuando se hace clic en el icono del menu */
+nav.active ul {
+  display: grid;
+  position: absolute;
+  background-color: #03223f;
+  width: 100%;
+  left: 0;
+  top: 60px; 
+  z-index: 1000;
+}
+
+.icono {
+  display: block; 
+  cursor: pointer; 
+}
+
+}
+
+/*Tarea 6- actividad 2- 1*/
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav a:hover, nav a:focus {
+  color: #038bbb;
+}
+
+
+/*Tarea 6- actividad 2- 4*/
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animar {
+  animation: fadeInUp 1s forwards;
+}
+
+button img{
+  max-width: 10%;
+}
+
+
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.carousel img {
+  width: 100%;
+}
+
+.carousel-controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.carousel-controls button {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+#cart-preview {
+  position: absolute;
+  top: 50px; 
+  right: 20px;
+  width: 300px;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+#cart-preview div {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+#cart-preview div:last-child {
+  border-bottom: none;
+}

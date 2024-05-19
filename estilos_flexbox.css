@@ -1,0 +1,295 @@
+body {
+    background-color: #010d23;
+    color: #ffffff;
+    font-family: "Nunito", sans-serif;
+    font-size: 14px;
+  }
+  
+  p {
+    text-align: justify;
+  }
+  
+  h1,
+  h2 {
+    font-family: "Press Start 2P", sans-serif;
+    font-size: 35px;
+  }
+  
+  header {
+    background-color: #03223f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    font-size: 20px;
+  }
+  
+  .icono {
+    width: 50px;
+    display: none;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  nav a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    color: #038bbb;
+  }
+  
+  .destacado .barra-lateral.destacada {
+    background-color: #038bbb;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    text-align: center;
+    font-size: 25px;
+  }
+  
+  .imagen-grande {
+    width: 1100px;
+    height: 800px; /* Ajusta para modificar el tamaño de la imagen grande  ANTHONY DEL FUTURO EN MOVIL DEJALO WITH EN 100_%*/
+    display: block;
+    margin: 0 auto; /* Centrar la imagen */
+  }
+  
+  .imagenes-medias {
+    display: flex;
+    width: 100%; /* Establece un ancho del 100% para el contenedor */
+    overflow: scroll; /* Oculta el desbordamiento horizontal */
+    flex-wrap: nowrap;
+  }
+  
+  .imagen-container {
+    flex: 1 0 auto;
+    margin: 0 50px;
+    background-color: #02699c;
+    width: 300px;
+    height: 300px;
+  }
+  
+  .exposiciones .exposicion img {
+    width: 100%;
+  }
+  
+  .parrafos {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 19px;
+  }
+  
+  header img {
+    width: 120px; /* Ajusta este valor para cambiar el tamaño del logo */
+    height: auto;
+    margin-left: 30px;
+  }
+  
+  .exposiciones {
+    display: flex;
+    gap: 1rem;
+    justify-content: center; /* Centra horizontalmente los juegos */
+    align-items: center; /* Centra verticalmente los juegos */
+  }
+  
+  .exposiciones .exposicion {
+    width: 400px; /* Tamaño de los divs cuadrados */
+    height: 400px;
+    position: relative; /* Para posicionar el botón en la parte inferior */
+  }
+  
+  .exposiciones .exposicion img {
+    width: 100%; /* Cubre todo el div */
+    height: 100%; /* Cubre todo el div */
+    object-fit: cover; /* Asegura que la imagen cubra todo el div sin deformarse */
+  }
+  
+  .exposiciones .exposicion button {
+    position: absolute; /* Posiciona el botón */
+    bottom: 0; /* En la parte inferior del div */
+    left: 50%; /* Centrado horizontalmente */
+    transform: translateX(-50%); /* Centrado horizontalmente */
+    background-color: #038bbb;
+    color: #ffffff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .exposiciones .exposicion button img {
+    width: 25px;
+    margin-left: 8px; /* Ajusta el margen entre la imagen y el texto del botón */
+  }
+  
+  .exposiciones .exposicion button:hover {
+    background-color: #02699c;
+  }
+  
+
+  body,
+  html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    /* Evitar el desplazamiento horizontal */
+  }
+  
+  .centrado {
+    text-align: center;
+  }
+  
+  header {
+    flex-wrap: wrap; /* Permitir que los elementos se ajusten si no hay espacio */
+  }
+  
+  nav ul {
+    padding-left: 0; /* Eliminar el padding por defecto de las listas */
+  }
+  
+  .imagenes-medias {
+    justify-content: center; /* Centrar las imágenes medianas */
+  }
+  
+  footer {
+    background-color: #03223f;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  footer .social-icons {
+    display: flex;
+  }
+  
+  footer .social-icons a {
+    margin-right: 10px;
+  }
+  
+  footer a img {
+    height: 80px; /* Ajusta el tamaño según tus necesidades */
+    width: auto;
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 20px;
+  }
+  
+  main div button {
+    background-color: #038bbb; /* Ajusta el color de fondo del botón según el diseño */
+    color: #1a1a2e; /* Ajusta el color del texto del botón */
+    border: none;
+    padding: 0.5em 1em; /* Ajusta el espaciado interior */
+    margin-top: 2em; /* Ajusta el margen superior */
+    font-size: 2em; /* Ajusta el tamaño de la fuente */
+    border-radius: 4px;
+    color: #ffffff;
+  }
+  
+  .producto {
+    display: flex;
+    align-items: center; /* Alinea verticalmente */
+    justify-content: space-between; /* Separa la imagen y la información */
+  }
+  
+  .producto img {
+    margin-left: 20%;
+    width: auto; /* Ajusta el ancho de la imagen como sea necesario */
+    height: auto; /* O puedes establecer una altura fija */
+    max-width: 30%; /* Ajusta este valor para cambiar el tamaño de la imagen */
+  }
+  
+  .info {
+    margin-right: 20%;
+    display: flex;
+    flex-direction: column; /* Coloca el precio encima del botón */
+    align-items: flex-start; /* Alinea los elementos a la izquierda */
+  }
+  
+  .precio {
+    margin: 0;
+    margin-bottom: 0.5em; /* Añade espacio entre el precio y el botón */
+    font-size: 1.5em; /* Ajusta el tamaño del precio */
+    /* Añade más estilos al precio si es necesario */
+  }
+  
+  .producto button {
+    /* Tus estilos para button aquí */
+    margin-top: 0; /* Remueve el margen superior para alinear con el precio */
+  }
+  ul a img {
+    width: 30px;
+    
+  }
+
+  
+
+  /* Estilos responsivos */
+  @media (max-width: 850px) {
+    .imagen-grande {
+      width: 100%; /* Cambia el ancho a 100% en dispositivos móviles */
+      display: block;
+      margin: 0 auto; /* Centrar la imagen */
+    }
+  
+    .icono {
+      display: block; /* Muestra la imagen de icono de menú en lugar de texto */
+    }
+  
+    nav ul {
+      display: none; /* Cambiar la orientación de los elementos del menú a vertical */
+    }
+  
+    .exposiciones {
+      flex-direction: column;
+    }
+  
+    .exposiciones .exposicion {
+      margin-bottom: 1rem;
+    }
+  
+    footer a img {
+      height: 60px; /* Ajusta el tamaño según tus necesidades */
+      width: auto;
+    }
+  
+    .producto img {
+      margin-left: 0%;
+      width: auto; /* Ajusta el ancho de la imagen como sea necesario */
+      height: auto; /* Mantiene la relación de aspecto */
+      max-width: 70%; /* Limita el tamaño máximo de la imagen */
+      margin-bottom: 1em; /* Espacio entre la imagen y el precio */
+    }
+  
+    .info {
+      margin-left: 20%;
+      flex-direction: column; /* Organiza el precio y el botón en columna */
+      text-align: center; /* Centra el texto del precio y el botón */
+    }
+  
+    .producto {
+      display: flex;
+      flex-direction: column; /* Los hijos se organizan en columna */
+      align-items: center; /* Centra los hijos horizontalmente */
+    }
+  
+    .precio {
+      margin-left: 35%;
+      margin-bottom: 0.5em; /* Añade espacio entre el precio y el botón */
+      font-size: 1.5em; /* Ajusta el tamaño del precio */
+      /* Añade más estilos al precio si es necesario */
+    }
+  }
+  

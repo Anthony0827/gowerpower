@@ -1,0 +1,334 @@
+:root {
+    --background-color: #121212;
+    --text-color: #ffffff; 
+    --header-background: #1a1a1a; 
+    --highlight-background: #3a3a3a; 
+    --footer-background: #1a1a1a; 
+  }
+  
+
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: "Nunito", sans-serif;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  
+  p {
+    text-align: justify;
+  }
+  
+  h1,
+  h2 {
+    font-family: "Press Start 2P", sans-serif;
+    font-size: 35px;
+  }
+
+  
+
+  
+  
+  header {
+    background-color: var(--header-background);
+    display: grid;
+    grid-template-columns: auto 1fr auto; 
+    align-items: center;
+    padding: 1rem 2rem;
+    font-size: 20px;
+  }
+  
+  .icono {
+    width: 50px;
+    display: none;
+  }
+  
+  nav {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); /* Crea tantas columnas como elementos haya, pero no menos de 120px */
+    justify-self: end; /* Esto alineara el elemento nav (que incluye ul) al final del area de la grid en la que reside */
+  }
+
+  nav ul {
+    list-style-type: none;
+    display: grid; /* cambiado a grid */
+    grid-auto-flow: column; /* Coloca los elementos de la lista en una fila */
+    gap: 3rem;
+  }
+  
+  nav a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    
+  background-color: var(--highlight-background);
+  }
+  
+  .destacado .barra-lateral.destacada {
+    
+  background-color: var(--highlight-background);
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+    font-size: 25px;
+  }
+  
+  .imagen-grande {
+    width: 1100px;
+    height: 800px; 
+    display: block;
+    margin: 0 auto; 
+  }
+  
+  .imagenes-medias {
+    display: flex;
+    width: 100%; /* Establece un ancho del 100% para el contenedor */
+    overflow: scroll; /* Oculta el desbordamiento horizontal */
+    flex-wrap: nowrap;
+  }
+  
+  .imagen-container {
+    flex: 1 0 auto;
+    margin: 0 50px;
+    background-color: var(--highlight-background);
+    width: 300px;
+    height: 300px;
+  }
+  
+  .exposiciones .exposicion img {
+    width: 100%;
+  }
+  
+  .parrafos {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 19px;
+  }
+  
+  header img {
+    width: 120px; /* Ajusta este valor para cambiar el tamaño del logo */
+    height: auto;
+    margin-left: 30px;
+  }
+  
+  .exposiciones {
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Crear tantas columnas de 400px como sea posible */
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .exposiciones .exposicion {
+    width: 400px; /* Tamaño de los divs cuadrados */
+    height: 400px;
+    position: relative; /* Para posicionar el boton en la parte inferior */
+  }
+  
+  .exposiciones .exposicion img {
+    width: 100%; /* Cubre todo el div */
+    height: 100%; /* Cubre todo el div */
+    object-fit: cover; /* Asegura que la imagen cubra todo el div sin deformarse */
+  }
+  
+  .exposiciones .exposicion button {
+    position: absolute; /* Posiciona el boton */
+    bottom: 0; /* En la parte inferior del div */
+    left: 50%; /* Centrado horizontalmente */
+    transform: translateX(-50%); /* Centrado horizontalmente */
+    background-color: var(--highlight-background);
+    color: #ffffff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+  
+  .exposiciones .exposicion button:hover {
+    background-color: var(--highlight-background);
+  }
+  
+  body,
+  html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    /* Evitar el desplazamiento horizontal */
+  }
+  
+  .centrado {
+    text-align: center;
+  }
+  
+  header {
+    flex-wrap: wrap; /* Permitir que los elementos se ajusten si no hay espacio */
+  }
+  
+  nav ul {
+    padding-left: 0; /* Eliminar el padding por defecto de las listas */
+  }
+  
+  .imagenes-medias {
+    justify-content: center; /* Centrar las imagenes medianas */
+  }
+  
+  footer {
+    background-color: var(--footer-background);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+
+  
+  
+  footer .social-icons {
+    display: flex;
+  }
+  
+  footer .social-icons a {
+    margin-right: 10px;
+  }
+  
+  footer a img {
+    height: 80px; /* Ajusta el tamaño segun tus necesidades */
+    width: auto;
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 20px;
+  }
+  
+  main div button {
+    background-color: var(--highlight-background);/* Ajusta el color de fondo del boton segun el diseño */
+    color: #1a1a2e; /* Ajusta el color del texto del boton */
+    border: none;
+    padding: 0.5em 1em; /* Ajusta el espaciado interior */
+    margin-top: 2em; /* Ajusta el margen superior */
+    font-size: 2em; /* Ajusta el tamaño de la fuente */
+    border-radius: 4px;
+    color: #ffffff;
+  }
+  
+  .producto {
+    display: flex;
+    align-items: center; /* Alinea verticalmente */
+    justify-content: space-between; /* Separa la imagen y la informacion */
+  }
+  
+  .producto img {
+    margin-left: 20%;
+    width: auto; /* Ajusta el ancho de la imagen como sea necesario */
+    height: auto; /* O puedes establecer una altura fija */
+    max-width: 30%; /* Ajusta este valor para cambiar el tamaño de la imagen */
+  }
+  
+  .info {
+    margin-right: 20%;
+    display: flex;
+    flex-direction: column; /* Coloca el precio encima del boton */
+    align-items: flex-start; /* Alinea los elementos a la izquierda */
+  }
+  
+  .precio {
+    margin: 0;
+    margin-bottom: 0.5em; /* Añade espacio entre el precio y el boton */
+    font-size: 1.5em; /* Ajusta el tamaño del precio */
+    /* Añade mas estilos al precio si es necesario */
+  }
+  
+  .producto button {
+    /* Tus estilos para button aqui */
+    margin-top: 0; /* Remueve el margen superior para alinear con el precio */
+  }
+  
+  /* Estilos responsivos */
+  @media (max-width: 850px) {
+    .imagen-grande {
+      width: 100%; /* Cambia el ancho a 100% en dispositivos moviles */
+      display: block;
+      margin: 0 auto; /* Centrar la imagen */
+    }
+  
+    header {
+        display: flex; /* Establece flexbox para el contenedor header */
+        justify-content: space-between; /* Separa los elementos a ambos extremos del contenedor */
+        align-items: center; /* Alinea los elementos verticalmente en el centro */
+        padding: 0 30px; /* Añade un poco de espacio en los lados del header */
+      }
+      
+      .icono {
+        display: block; /* Muestra la imagen de icono de menu en lugar de texto */
+        margin-left: auto; /* Empuja el icono hacia la derecha */
+      }
+      
+      header img {
+        width: 120px; /* Ajusta este valor para cambiar el tamaño del logo */
+        height: auto;
+        margin-right: auto; /* Empuja la imagen hacia la izquierda */
+      }
+
+    nav ul {
+      display: none; /* Cambiar la orientacion de los elementos del menu a vertical */
+    }
+  
+    .exposiciones {
+      flex-direction: column;
+      margin-left: 22%;
+    }
+  
+    .exposiciones .exposicion {
+      margin-bottom: 2rem;
+    }
+  
+    footer a img {
+      height: 60px; /* Ajusta el tamaño segun tus necesidades */
+      width: auto;
+    }
+  
+    .producto img {
+      margin-left: 0%;
+      width: auto; /* Ajusta el ancho de la imagen como sea necesario */
+      height: auto; /* Mantiene la relacion de aspecto */
+      max-width: 70%; /* Limita el tamaño maximo de la imagen */
+      margin-bottom: 1em; /* Espacio entre la imagen y el precio */
+    }
+  
+    .info {
+      margin-left: 20%;
+      flex-direction: column; /* Organiza el precio y el boton en columna */
+      text-align: center; /* Centra el texto del precio y el boton */
+    }
+  
+    .producto {
+      display: flex;
+      flex-direction: column; /* Los hijos se organizan en columna */
+      align-items: center; /* Centra los hijos horizontalmente */
+    }
+  
+    .precio {
+      margin-left: 35%;
+      margin-bottom: 0.5em; 
+      font-size: 1.5em; 
+      
+    }
+
+    .exposiciones {
+        grid-template-columns: 1fr; 
+      }
+    
+      header {
+        grid-template-columns: auto; 
+        grid-template-rows: auto auto; 
+      }
+
+  }
+  

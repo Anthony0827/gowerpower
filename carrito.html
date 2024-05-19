@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras - Gower Power</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/Logo_blanco.png">
+    <script type="module" src="carrito.js"></script>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="img/Logo_blanco.png" alt="Logo de la empresa" aria-label="Logo de Gower Power" id="logo-label">
+        </a>        
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="./Informacion.html"><img src="./img/Iconos/Informacion.png" alt=""></a></li>
+                <li><a href="#"><img src="./img/Iconos/juegos.png" alt=""></a></li>
+                <li><a href="Merchandisign.html"><img src="./img/Iconos/merchandising.png" alt=""></a></li>
+                <li><a href="carrito.html"><img src="./img/Iconos/Carritp.png" alt=""></a></li>
+                <li><a href="#"><img src="./img/Iconos/Usuario.png" alt=""></a></li>
+                <li><a href="#"><img src="./img/language-icon.png" alt=""></a></li>
+            </ul>
+         
+            <img src="img/icono.png" class="icono" alt="" id="menu-icon" aria-hidden="true">
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h1>Carrito de Compras</h1>
+            <table id="cart-table">
+                <tr>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                    <th>Eliminar</th>
+                </tr>
+                <!-- Los productos deberian de agregarse aqui-->
+            </table>
+            <div class="total">
+                <h2>Total: $<span id="cart-total">0.00</span></h2>
+                <button>Proceder al Pago</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="social-icons">
+            <a href="#" target="_blank"><img src="img/instagram-icon.png" alt="Ícono de Instagram"></a>
+            <a href="#" target="_blank"><img src="img/twitter-icon.png" alt="Ícono de Twitter"></a>
+            <a href="#" target="_blank"><img src="img/whatsapp-icon.png" alt="Ícono de WhatsApp"></a>
+            <a href="#" target="_blank"><img src="img/facebook-icon.png" alt="Ícono de Facebook"></a>
+            <a href="./Informacion.html" target="_blank"><img src="img/Iconos/Informacion.png" alt="Ícono de Información"></a>
+        </div>
+        <p>© 2023 GOWER POWER</p>
+        <div class="language-icon">
+            <a href="#" target="_blank"><img src="img/language-icon.png" alt="Idiomas"></a>
+        </div>
+    </footer>
+</body>
+</html>

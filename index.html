@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gower Power</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/Logo_blanco.png">
+</head>
+<body>
+    <header aria-labelledby="logo-label">
+        <img src="./Imagenes vectorizadas/Logo_blanco.svg" alt="Logo de la empresa" class="logo" aria-label="Logo de Gower Power" id="logo-label">
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="./Informacion.html"><img src="./img/Iconos/Informacion.png" alt=""></a></li>
+                <li><a href="#"><img src="./img/Iconos/juegos.png" alt=""></a></li>
+                <li><a href="Merchandisign.html"><img src="./img/Iconos/merchandising.png" alt=""></a></li>
+                <li><a href="carrito.html"><img src="./img/Iconos/Carritp.png" alt=""></a></li>
+                <li><a href="#"><img src="./img/Iconos/Usuario.png" alt=""></a></li>
+                <li><a href="#"><img src="./img/language-icon.png" alt=""></a></li>
+            </ul>
+            <img src="img/icono.png" class="icono" alt="" id="menu-icon" aria-hidden="true">
+        </nav>
+    </header>
+    <main aria-labelledby="main-label">
+        <br><br>
+        <h1 class="centrado" aria-label="Título principal">Gower Power</h1> <br><br>
+        <section class="destacado" aria-labelledby="juego-reciente-label">
+            <div class="barra-lateral destacada" aria-hidden="true">JUEGO MÁS RECIENTE</div>
+            <img src="img/Gowerpower_Imagen_principal_desvanecido.jpg" alt="Imagen del juego más reciente" class="imagen-grande" loading="lazy">
+            <div class="barra-lateral destacada" aria-label="Nombre del juego" id="juego-reciente-label">ABZU</div> <br> <br> <br>
+            
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <img src="img/abzu2.jpg" alt="Imagen 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/abzu3.jpg" alt="Imagen 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/abzu4.jpg" alt="Imagen 4">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/abzu5.jpg" alt="Imagen 5">
+                    </div>
+                </div>
+                <div class="carousel-controls">
+                    <button id="prev">&#10094;</button>
+                    <button id="next">&#10095;</button>
+                </div>
+            </div> <br>
+            
+            <div class="barra-separadora"></div>
+            <div class="contenedor-iframe">
+                <a href="./ficha_juego.html"><iframe src="./Banner_Anthony/Banner_Anthony.html" width="300" height="250"></iframe></a>   
+            </div>
+            <canvas id="miCanvas" width="1600" height="120"></canvas>
+            <h2 class="centrado">DESCRIPCIÓN</h2> <br>
+            <p class="parrafos">ABZÛ, una bella aventura submarina. Sumérgete en un mundo oceánico repleto de misterios y lleno de vida y de color. Encarna al submarinista y realiza acrobacias increíbles gracias al sencillo sistema de control. Descubre cientos de especies únicas (basadas en criaturas reales) y familiarízate con la fauna marina. Interactúa con bancos de miles de peces, que responden de forma procesal entre ellos, ante tu presencia y ante los depredadores. Pasea por épicos entornos marinos y explora los ecosistemas acuáticos, que han sido modelados con un nivel de detalle sin precedentes.</p> <br>
+            
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Gris
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p><strong>Gris</strong> es una experiencia serena y evocadora, libre de peligro, frustración o muerte. Los jugadores explorarán un meticuloso mundo diseñado con delicadeza y repleto de arte, animación detallada y una elegante partitura musical. A través del juego, se revelarán nuevas habilidades para explorar más fácilmente la realidad descolorida de Gris, que aparecerá con nuevos caminos a explorar usando estas nuevas habilidades.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Hollow Knight
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p><strong>Hollow Knight</strong> es una aventura de acción en 2D en un vasto mundo interconectado. Explora cavernas retorcidas, ciudades antiguas y desechos mortales. Lucha contra criaturas corruptas y haz nuevos amigos extraños. Desbloquea habilidades y poderes para ganar ventaja en tu viaje. Descubre la historia de Hallownest y el misterio de los Caballeros Caídos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    
+                    
+                </div>
+            </div>
+            <br> <br>
+            <h2 class="centrado">MÁS JUEGOS</h2> <br> <br>
+            <div class="barra-separadora"></div>
+            <div class="exposiciones">
+                <div class="exposicion">
+                    <img src="img/PORTADA_ABZU.jpg" alt="Imagen del juego 1" loading="lazy">
+                    <button class="button">SABER MÁS</button>
+                </div>
+                <div class="exposicion">
+                    <img src="img/GRIS.jpg" alt="Imagen del juego 2" loading="lazy">
+                    <button class="button" onclick="window.location.href='ficha_juego.html'">SABER MÁS</button>
+                </div>                
+                <div class="exposicion">
+                    <img src="img/HOLLOW.jpg" alt="Imagen del juego 3" loading="lazy">
+                    <button class="button">SABER MÁS</button>
+                </div>
+            </div> <br> <br> <br>
+        </section>
+    </main>
+    <footer aria-labelledby="footer-label">
+        <div class="social-icons">   
+            <a href="#" target="_blank"><img src="img/instagram-icon.png" alt="Ícono de Instagram"></a>
+            <a href="#" target="_blank"><img src="img/twitter-icon.png" alt="Ícono de Twitter"></a>
+            <a href="#" target="_blank"><img src="img/whatsapp-icon.png" alt="Ícono de WhatsApp"></a>
+            <a href="#" target="_blank"><img src="img/facebook-icon.png" alt="Ícono de Facebook"></a>
+            <a href="./Informacion.html" target="_blank"><img src="img/Iconos/Informacion.png" alt="Ícono de Informacion"></a>
+        </div>
+        <div class="copyright">
+            <p>© 2023 GOWER POWER</p>
+        </div>
+        <div class="language-icon">
+            <a href="#" target="_blank"><img src="img/language-icon.png" alt="Idiomas"></a>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+    <button id="back-to-top" class="btn btn-primary btn-lg shadow" style="position: fixed; bottom: 20px; right: 20px; display: none; border-radius: 50%; width: 50px; height: 50px;">
+        subir ↑
+    </button>
+</body>
+</html>
